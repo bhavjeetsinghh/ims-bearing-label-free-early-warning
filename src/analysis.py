@@ -16,13 +16,18 @@ dead = df.iloc[-1]
 R['excluded_file'] = dead.filename
 R['excluded_rms'] = float(dead.rms)
 v = df.iloc[:-1].reset_index(drop=True).copy()
-v['h'] = (v.t - v.t.iloc[0]).dt.total_seconds() / 3600
+# Clock: operating hours. The IMS documentation states that longer gaps between files mark resumption of the
+# experiment on the next working day, so each pause (>15 min) is counted as one nominal 10-min interval.
+v['h_el'] = (v.t - v.t.iloc[0]).dt.total_seconds() / 3600
+_dt = v.h_el.diff().fillna(0)
+v['h'] = np.where(_dt > 0.25, 10 / 60, _dt).cumsum()
 END = v.t.iloc[-1]
-v['ttg'] = (END - v.t).dt.total_seconds() / 3600          # hours to end of recording
+v['ttg'] = v.h.iloc[-1] - v.h                               # operating hours to end of recording
+v['ttg_el'] = (END - v.t).dt.total_seconds() / 3600         # elapsed hours to end of recording
 v['crest'] = (v.peak2peak / 2) / v.rms                     # crest-factor proxy (half peak-to-peak / RMS)
 R['n_valid'] = len(v)
 R['start'] = str(v.t.iloc[0]); R['end'] = str(END)
-R['run_hours'] = float(v.h.iloc[-1])
+R['run_hours'] = float(v.h.iloc[-1]); R['elapsed_hours'] = float(v.h_el.iloc[-1])
 gap = v.t.diff().dt.total_seconds() / 60
 gaps = v.loc[gap > 15, ['filename']].assign(gap_h=(gap[gap > 15] / 60).round(2))
 R['gaps'] = gaps.to_dict('records'); R['gap_total_h'] = float(((gap[gap > 15] - 10) / 60).sum())
@@ -146,6 +151,8 @@ def cbm_rate(beta, eta, pd_, lead, lam, cm=0.0):
     return (pd_ * Cp + (1 - pd_) * Cf) / EL + Cfa * lam + cm
 MEAN = R['run_hours']
 cost = {}
+LEAD_D1 = det['D1 RMS > 2x baseline']['sustained_lead_h']   # warning time used in every cost calculation
+R['cost_lead_h'] = LEAD_D1
 for beta in [1.5, 2.0, 3.0]:
     eta = eta_of(beta, MEAN); Ta, ga = age_opt(beta, eta)
     rtf = Cf / MEAN
@@ -156,12 +163,12 @@ for beta in [1.5, 2.0, 3.0]:
     # break-even false-alarm rate (per 1000 h) vs detection probability, lead 24 h
     be = {}
     for pdv in [1.0, 0.95, 0.9, 0.85, 0.8, 0.75]:
-        base_cbm = cbm_rate(beta, eta, pdv, 24.0, 0.0)
+        base_cbm = cbm_rate(beta, eta, pdv, LEAD_D1, 0.0)
         be[str(pdv)] = 1000 * max(0.0, (ga - base_cbm) / Cfa)
-    cost[str(beta)]['breakeven_fa_per_1000h_lead24'] = be
+    cost[str(beta)]['breakeven_fa_per_1000h'] = be
     cost[str(beta)]['max_monitoring_cost_per_h_D1_pd1'] = ga - cbm_rate(beta, eta, 1.0, det['D1 RMS > 2x baseline']['sustained_lead_h'], 0.0)
     # break-even p_d with zero false alarms
-    f = lambda pdv: cbm_rate(beta, eta, pdv, 24.0, 0.0) - ga
+    f = lambda pdv: cbm_rate(beta, eta, pdv, LEAD_D1, 0.0) - ga
     cost[str(beta)]['breakeven_pd_zeroFA'] = float(optimize.brentq(f, 0.0, 1.0)) if f(0) * f(1) < 0 else None
 R['cost'] = cost
 

@@ -5,7 +5,8 @@
  "n_valid": 6323,
  "start": "2004-03-04 09:27:46",
  "end": "2004-04-18 02:32:55",
- "run_hours": 1073.0858333333333,
+ "run_hours": 1053.2180555555553,
+ "elapsed_hours": 1073.0858333333333,
  "gaps": [
   {
    "filename": "2004.03.15.12.02.57",
@@ -57,8 +58,8 @@
   }
  },
  "n_base": 288,
- "n_ref": 4924,
- "ref_hours": 832.9863888888889,
+ "n_ref": 4881,
+ "ref_hours": 813.1174999999998,
  "day0_vs_base": {
   "rms": [
    0.06874171370223454,
@@ -73,45 +74,45 @@
    0.59253125
   ]
  },
- "rms_drift_pct": 5.824503188445029,
+ "rms_drift_pct": 5.774918011084029,
  "base_rms_mean": 0.0658085771512716,
  "base_rms_sd": 0.001259127630635289,
  "T2_ucl": 19.279339409836496,
  "detectors": {
   "D1 RMS > 2x baseline": {
-   "first_alarm_final7d_ttg": 24.333333333333332,
+   "first_alarm_final7d_ttg": 24.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.333333333333332,
-   "sustained_lead_h": 21.833333333333332,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
    "first_alarm_time": "2004-04-17 02:12:55"
   },
   "D2 RMS > mean+3sd": {
-   "first_alarm_final7d_ttg": 167.84944444444446,
-   "fa_episodes_ref": 65,
-   "fa_per_1000h": 78.03248752563984,
-   "episodes_final_7d": 57,
-   "first_alarm_ttg": 615.5161111111111,
-   "sustained_lead_h": 77.68277777777777,
+   "first_alarm_final7d_ttg": 167.51722222222213,
+   "fa_episodes_ref": 61,
+   "fa_per_1000h": 75.01990794688346,
+   "episodes_final_7d": 61,
+   "first_alarm_ttg": 607.3505555555553,
+   "sustained_lead_h": 70.51722222222213,
    "first_alarm_time": "2004-03-23 11:01:57"
   },
   "D3 Kurtosis > 6": {
-   "first_alarm_final7d_ttg": 2.3333333333333335,
+   "first_alarm_final7d_ttg": 2.3333333333332575,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 2.3333333333333335,
-   "sustained_lead_h": 1.1666666666666667,
+   "first_alarm_ttg": 2.3333333333332575,
+   "sustained_lead_h": 1.1666666666667425,
    "first_alarm_time": "2004-04-18 00:12:55"
   },
   "D5 Hotelling T2 (alpha=0.001)": {
-   "first_alarm_final7d_ttg": 153.51611111111112,
+   "first_alarm_final7d_ttg": 146.3505555555554,
    "fa_episodes_ref": 6,
-   "fa_per_1000h": 7.2029988485206005,
+   "fa_per_1000h": 7.3790073390377175,
    "episodes_final_7d": 22,
-   "first_alarm_ttg": 514.8494444444444,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_ttg": 506.68388888888865,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-03-27 15:41:57"
   }
  },
@@ -119,67 +120,67 @@
   {
    "detector": "RMS ratio",
    "thr": 1.1,
-   "first_alarm_final7d_ttg": 149.51611111111112,
+   "first_alarm_final7d_ttg": 142.3505555555554,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 5,
-   "first_alarm_ttg": 149.51611111111112,
-   "sustained_lead_h": 59.0,
+   "first_alarm_ttg": 142.3505555555554,
+   "sustained_lead_h": 58.999999999999886,
    "first_alarm_time": "2004-04-11 21:01:57"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.15,
-   "first_alarm_final7d_ttg": 58.833333333333336,
+   "first_alarm_final7d_ttg": 58.833333333333144,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 58.833333333333336,
-   "sustained_lead_h": 58.833333333333336,
+   "first_alarm_ttg": 58.833333333333144,
+   "sustained_lead_h": 58.833333333333144,
    "first_alarm_time": "2004-04-15 15:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.2,
-   "first_alarm_final7d_ttg": 58.833333333333336,
+   "first_alarm_final7d_ttg": 58.833333333333144,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 4,
-   "first_alarm_ttg": 58.833333333333336,
-   "sustained_lead_h": 43.666666666666664,
+   "first_alarm_ttg": 58.833333333333144,
+   "sustained_lead_h": 43.66666666666663,
    "first_alarm_time": "2004-04-15 15:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.25,
-   "first_alarm_final7d_ttg": 58.166666666666664,
+   "first_alarm_final7d_ttg": 58.166666666666515,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 4,
-   "first_alarm_ttg": 58.166666666666664,
-   "sustained_lead_h": 41.666666666666664,
+   "first_alarm_ttg": 58.166666666666515,
+   "sustained_lead_h": 41.66666666666663,
    "first_alarm_time": "2004-04-15 16:22:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.3,
-   "first_alarm_final7d_ttg": 40.666666666666664,
+   "first_alarm_final7d_ttg": 40.66666666666663,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 8,
-   "first_alarm_ttg": 40.666666666666664,
-   "sustained_lead_h": 30.166666666666668,
+   "first_alarm_ttg": 40.66666666666663,
+   "sustained_lead_h": 30.16666666666663,
    "first_alarm_time": "2004-04-16 09:52:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.35,
-   "first_alarm_final7d_ttg": 28.666666666666668,
+   "first_alarm_final7d_ttg": 28.666666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 28.666666666666668,
-   "sustained_lead_h": 28.666666666666668,
+   "first_alarm_ttg": 28.666666666666742,
+   "sustained_lead_h": 28.666666666666742,
    "first_alarm_time": "2004-04-16 21:52:55"
   },
   {
@@ -196,12 +197,12 @@
   {
    "detector": "RMS ratio",
    "thr": 1.45,
-   "first_alarm_final7d_ttg": 26.833333333333332,
+   "first_alarm_final7d_ttg": 26.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 26.833333333333332,
-   "sustained_lead_h": 26.833333333333332,
+   "first_alarm_ttg": 26.833333333333258,
+   "sustained_lead_h": 26.833333333333258,
    "first_alarm_time": "2004-04-16 23:42:55"
   },
   {
@@ -240,34 +241,34 @@
   {
    "detector": "RMS ratio",
    "thr": 1.65,
-   "first_alarm_final7d_ttg": 26.333333333333332,
+   "first_alarm_final7d_ttg": 26.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 26.333333333333332,
-   "sustained_lead_h": 26.333333333333332,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
    "first_alarm_time": "2004-04-17 00:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.7,
-   "first_alarm_final7d_ttg": 26.333333333333332,
+   "first_alarm_final7d_ttg": 26.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 26.333333333333332,
-   "sustained_lead_h": 26.333333333333332,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
    "first_alarm_time": "2004-04-17 00:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 1.75,
-   "first_alarm_final7d_ttg": 26.333333333333332,
+   "first_alarm_final7d_ttg": 26.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 26.333333333333332,
-   "sustained_lead_h": 26.333333333333332,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
    "first_alarm_time": "2004-04-17 00:12:55"
   },
   {
@@ -306,133 +307,133 @@
   {
    "detector": "RMS ratio",
    "thr": 1.95,
-   "first_alarm_final7d_ttg": 24.666666666666668,
+   "first_alarm_final7d_ttg": 24.666666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.666666666666668,
-   "sustained_lead_h": 24.666666666666668,
+   "first_alarm_ttg": 24.666666666666742,
+   "sustained_lead_h": 24.666666666666742,
    "first_alarm_time": "2004-04-17 01:52:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.0,
-   "first_alarm_final7d_ttg": 24.333333333333332,
+   "first_alarm_final7d_ttg": 24.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.333333333333332,
-   "sustained_lead_h": 21.833333333333332,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
    "first_alarm_time": "2004-04-17 02:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.05,
-   "first_alarm_final7d_ttg": 24.333333333333332,
+   "first_alarm_final7d_ttg": 24.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.333333333333332,
-   "sustained_lead_h": 21.833333333333332,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
    "first_alarm_time": "2004-04-17 02:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.1,
-   "first_alarm_final7d_ttg": 24.166666666666668,
+   "first_alarm_final7d_ttg": 24.166666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.166666666666668,
+   "first_alarm_ttg": 24.166666666666742,
    "sustained_lead_h": 21.5,
    "first_alarm_time": "2004-04-17 02:22:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.15,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 21.333333333333332,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.2,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 1,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 21.333333333333332,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.25,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 21.333333333333332,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.3,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 5,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 18.166666666666668,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 18.166666666666742,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.35,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 4,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 14.166666666666666,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 14.166666666666742,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.4,
-   "first_alarm_final7d_ttg": 21.333333333333332,
+   "first_alarm_final7d_ttg": 21.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 4,
-   "first_alarm_ttg": 21.333333333333332,
-   "sustained_lead_h": 14.166666666666666,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 14.166666666666742,
    "first_alarm_time": "2004-04-17 05:12:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.45,
-   "first_alarm_final7d_ttg": 21.166666666666668,
+   "first_alarm_final7d_ttg": 21.166666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 21.166666666666668,
-   "sustained_lead_h": 13.833333333333334,
+   "first_alarm_ttg": 21.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:22:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.5,
-   "first_alarm_final7d_ttg": 21.166666666666668,
+   "first_alarm_final7d_ttg": 21.166666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 21.166666666666668,
-   "sustained_lead_h": 13.833333333333334,
+   "first_alarm_ttg": 21.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:22:55"
   },
   {
@@ -443,7 +444,7 @@
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
    "first_alarm_ttg": 21.0,
-   "sustained_lead_h": 13.833333333333334,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:32:55"
   },
   {
@@ -454,7 +455,7 @@
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
    "first_alarm_ttg": 21.0,
-   "sustained_lead_h": 13.833333333333334,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:32:55"
   },
   {
@@ -465,7 +466,7 @@
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
    "first_alarm_ttg": 21.0,
-   "sustained_lead_h": 13.833333333333334,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:32:55"
   },
   {
@@ -476,61 +477,61 @@
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
    "first_alarm_ttg": 21.0,
-   "sustained_lead_h": 13.833333333333334,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 05:32:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.75,
-   "first_alarm_final7d_ttg": 20.833333333333332,
+   "first_alarm_final7d_ttg": 20.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 20.833333333333332,
+   "first_alarm_ttg": 20.833333333333258,
    "sustained_lead_h": 12.5,
    "first_alarm_time": "2004-04-17 05:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.8,
-   "first_alarm_final7d_ttg": 20.833333333333332,
+   "first_alarm_final7d_ttg": 20.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 20.833333333333332,
-   "sustained_lead_h": 12.333333333333334,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.333333333333258,
    "first_alarm_time": "2004-04-17 05:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.85,
-   "first_alarm_final7d_ttg": 20.833333333333332,
+   "first_alarm_final7d_ttg": 20.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 20.833333333333332,
-   "sustained_lead_h": 12.333333333333334,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.333333333333258,
    "first_alarm_time": "2004-04-17 05:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.9,
-   "first_alarm_final7d_ttg": 20.833333333333332,
+   "first_alarm_final7d_ttg": 20.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 20.833333333333332,
-   "sustained_lead_h": 12.166666666666666,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.166666666666742,
    "first_alarm_time": "2004-04-17 05:42:55"
   },
   {
    "detector": "RMS ratio",
    "thr": 2.95,
-   "first_alarm_final7d_ttg": 20.833333333333332,
+   "first_alarm_final7d_ttg": 20.833333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 20.833333333333332,
+   "first_alarm_ttg": 20.833333333333258,
    "sustained_lead_h": 12.0,
    "first_alarm_time": "2004-04-17 05:42:55"
   },
@@ -549,72 +550,72 @@
    "detector": "T2",
    "thr": 0.99,
    "ucl": 13.733983384599815,
-   "first_alarm_final7d_ttg": 167.18277777777777,
-   "fa_episodes_ref": 36,
-   "fa_per_1000h": 43.2179930911236,
-   "episodes_final_7d": 58,
-   "first_alarm_ttg": 516.3494444444444,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_final7d_ttg": 162.8505555555554,
+   "fa_episodes_ref": 35,
+   "fa_per_1000h": 43.04420947772002,
+   "episodes_final_7d": 59,
+   "first_alarm_ttg": 508.18388888888865,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-03-27 14:11:57"
   },
   {
    "detector": "T2",
    "thr": 0.995,
    "ucl": 15.415223858401264,
-   "first_alarm_final7d_ttg": 167.18277777777777,
+   "first_alarm_final7d_ttg": 160.01722222222213,
    "fa_episodes_ref": 25,
-   "fa_per_1000h": 30.01249520216917,
+   "fa_per_1000h": 30.745863912657157,
    "episodes_final_7d": 47,
-   "first_alarm_ttg": 516.3494444444444,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_ttg": 508.18388888888865,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-03-27 14:11:57"
   },
   {
    "detector": "T2",
    "thr": 0.999,
    "ucl": 19.279339409836496,
-   "first_alarm_final7d_ttg": 153.51611111111112,
+   "first_alarm_final7d_ttg": 146.3505555555554,
    "fa_episodes_ref": 6,
-   "fa_per_1000h": 7.2029988485206005,
+   "fa_per_1000h": 7.3790073390377175,
    "episodes_final_7d": 22,
-   "first_alarm_ttg": 514.8494444444444,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_ttg": 506.68388888888865,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-03-27 15:41:57"
   },
   {
    "detector": "T2",
    "thr": 0.9995,
    "ucl": 20.934009475541863,
-   "first_alarm_final7d_ttg": 153.51611111111112,
+   "first_alarm_final7d_ttg": 146.3505555555554,
    "fa_episodes_ref": 1,
-   "fa_per_1000h": 1.2004998080867668,
+   "fa_per_1000h": 1.2298345565062863,
    "episodes_final_7d": 16,
-   "first_alarm_ttg": 396.1827777777778,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_ttg": 388.017222222222,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-04-01 14:21:57"
   },
   {
    "detector": "T2",
    "thr": 0.9999,
    "ucl": 24.768366692065474,
-   "first_alarm_final7d_ttg": 149.51611111111112,
+   "first_alarm_final7d_ttg": 142.3505555555554,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 10,
-   "first_alarm_ttg": 149.51611111111112,
-   "sustained_lead_h": 59.666666666666664,
+   "first_alarm_ttg": 142.3505555555554,
+   "sustained_lead_h": 59.666666666666515,
    "first_alarm_time": "2004-04-11 21:01:57"
   },
   {
    "detector": "T2",
    "thr": 0.99999,
    "ucl": 30.260117053074108,
-   "first_alarm_final7d_ttg": 63.333333333333336,
+   "first_alarm_final7d_ttg": 63.333333333333144,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 63.333333333333336,
-   "sustained_lead_h": 59.0,
+   "first_alarm_ttg": 63.333333333333144,
+   "sustained_lead_h": 58.999999999999886,
    "first_alarm_time": "2004-04-15 11:12:55"
   }
  ],
@@ -641,22 +642,22 @@
   },
   "b3_rms": {
    "base_mean": 0.0658085771512716,
-   "first_alarm_final7d_ttg": 24.333333333333332,
+   "first_alarm_final7d_ttg": 24.333333333333258,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 2,
-   "first_alarm_ttg": 24.333333333333332,
-   "sustained_lead_h": 21.833333333333332,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
    "first_alarm_time": "2004-04-17 02:12:55"
   },
   "b4_rms": {
    "base_mean": 0.05101584498666224,
-   "first_alarm_final7d_ttg": 24.166666666666668,
+   "first_alarm_final7d_ttg": 24.166666666666742,
    "fa_episodes_ref": 0,
    "fa_per_1000h": 0.0,
    "episodes_final_7d": 3,
-   "first_alarm_ttg": 24.166666666666668,
-   "sustained_lead_h": 13.833333333333334,
+   "first_alarm_ttg": 24.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
    "first_alarm_time": "2004-04-17 02:22:55"
   }
  },
@@ -688,7 +689,7 @@
   "all_four_identical": true,
   "implied_rms_threshold_g": 0.10864505531169896,
   "label_onset": "2004-04-17 01:52:55",
-  "label_ttg": 24.666666666666668,
+  "label_ttg": 24.666666666666742,
   "test_healthy_from": "2004-04-15 02:41:57"
  },
  "costs": {
@@ -696,93 +697,94 @@
   "Cf": 88000,
   "Cfa": 2500
  },
+ "cost_lead_h": 21.833333333333258,
  "cost": {
   "1.5": {
-   "eta": 1188.6916959994142,
-   "rtf_per_1000h": 82006.48752080255,
-   "age_opt_T": 675.3006245332406,
-   "age_opt_frac_mean": 0.6293071845292655,
-   "age_per_1000h": 69907.4303717783,
+   "eta": 1166.6835194595694,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 662.7977022577451,
+   "age_opt_frac_mean": 0.629307196892034,
+   "age_per_1000h": 71226.15566737662,
    "D1 RMS > 2x baseline": {
-    "1.0": 13793.070646680982,
-    "0.95": 17270.965693257833,
-    "0.9": 20741.65251324436,
-    "0.8": 27661.49092594157
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
    },
    "D5 Hotelling T2 (alpha=0.001)": {
-    "1.0": 32315.49570365842,
-    "0.95": 35889.19261103121,
-    "0.9": 39441.97196440556,
-    "0.8": 46485.508341832974
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
    },
-   "breakeven_fa_per_1000h_lead24": {
-    "1.0": 22.434349212710693,
-    "0.95": 21.041046926767766,
-    "0.9": 19.650924831541886,
-    "0.85": 18.26397205134134,
-    "0.8": 16.880177760008564,
-    "0.75": 15.499531180638423
+   "breakeven_fa_per_1000h": {
+    "1.0": 22.866954496248635,
+    "0.95": 21.4491390190421,
+    "0.9": 20.034318568409052,
+    "0.85": 18.622483664216254,
+    "0.8": 17.21362486629814,
+    "0.75": 15.807732774246425
    },
-   "max_monitoring_cost_per_h_D1_pd1": 56.11435972509732,
-   "breakeven_pd_zeroFA": 0.18077033153844452
+   "max_monitoring_cost_per_h_D1_pd1": 57.16738624062159,
+   "breakeven_pd_zeroFA": 0.18046209831570717
   },
   "2.0": {
-   "eta": 1210.8476988386606,
-   "rtf_per_1000h": 82006.48752080255,
-   "age_opt_T": 546.8126152026178,
-   "age_opt_frac_mean": 0.5095702489185328,
-   "age_per_1000h": 54824.7712303584,
+   "eta": 1188.4293122977328,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 536.6885965997203,
+   "age_opt_frac_mean": 0.509570258284858,
+   "age_per_1000h": 55858.97907153305,
    "D1 RMS > 2x baseline": {
-    "1.0": 13793.070646680982,
-    "0.95": 17270.965693257833,
-    "0.9": 20741.65251324436,
-    "0.8": 27661.49092594157
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
    },
    "D5 Hotelling T2 (alpha=0.001)": {
-    "1.0": 32315.49570365842,
-    "0.95": 35889.19261103121,
-    "0.9": 39441.97196440556,
-    "0.8": 46485.508341832974
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
    },
-   "breakeven_fa_per_1000h_lead24": {
-    "1.0": 16.40128555614273,
-    "0.95": 15.007983270199809,
-    "0.9": 13.617861174973928,
-    "0.85": 12.230908394773378,
-    "0.8": 10.8471141034406,
-    "0.75": 9.466467524070463
+   "breakeven_fa_per_1000h": {
+    "1.0": 16.720083857911206,
+    "0.95": 15.302268380704668,
+    "0.9": 13.887447930071625,
+    "0.85": 12.475613025878827,
+    "0.8": 11.066754227960713,
+    "0.75": 9.660862135909
    },
-   "max_monitoring_cost_per_h_D1_pd1": 41.03170058367742,
-   "breakeven_pd_zeroFA": 0.4040816751915603
+   "max_monitoring_cost_per_h_D1_pd1": 41.80020964477802,
+   "breakeven_pd_zeroFA": 0.4035438336990138
   },
   "3.0": {
-   "eta": 1201.691437967686,
-   "rtf_per_1000h": 82006.48752080255,
-   "age_opt_T": 557.5204091147691,
-   "age_opt_frac_mean": 0.519548755371171,
-   "age_per_1000h": 39495.8285315425,
+   "eta": 1179.442576128892,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 547.1981185266848,
+   "age_opt_frac_mean": 0.5195487445741203,
+   "age_per_1000h": 40240.87305510984,
    "D1 RMS > 2x baseline": {
-    "1.0": 13793.070646680982,
-    "0.95": 17270.965693257833,
-    "0.9": 20741.65251324436,
-    "0.8": 27661.49092594157
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
    },
    "D5 Hotelling T2 (alpha=0.001)": {
-    "1.0": 32315.49570365842,
-    "0.95": 35889.19261103121,
-    "0.9": 39441.97196440556,
-    "0.8": 46485.508341832974
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
    },
-   "breakeven_fa_per_1000h_lead24": {
-    "1.0": 10.26970847661637,
-    "0.95": 8.87640619067345,
-    "0.9": 7.486284095447568,
-    "0.85": 6.099331315247018,
-    "0.8": 4.71553702391424,
-    "0.75": 3.334890444544102
+   "breakeven_fa_per_1000h": {
+    "1.0": 10.472841451341928,
+    "0.95": 9.055025974135388,
+    "0.9": 7.640205523502343,
+    "0.85": 6.228370619309544,
+    "0.8": 4.819511821391432,
+    "0.75": 3.413619729339719
    },
-   "max_monitoring_cost_per_h_D1_pd1": 25.70275788486152,
-   "breakeven_pd_zeroFA": 0.6287562435074867
+   "max_monitoring_cost_per_h_D1_pd1": 26.182103628354817,
+   "breakeven_pd_zeroFA": 0.6281561791694251
   }
  }
 }

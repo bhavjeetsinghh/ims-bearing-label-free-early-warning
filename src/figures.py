@@ -26,7 +26,7 @@ def gapped(df, col):
 def save(fig, name):
     fig.savefig(f'{out}/{name}.png', bbox_inches='tight'); fig.savefig(f'{out}/{name}.pdf', bbox_inches='tight'); plt.close(fig)
 
-t0 = s.t.iloc[0]; tb = t0 + pd.Timedelta(hours=72); tr = t0 + pd.Timedelta(hours=24); ta = s.t.iloc[-1] - pd.Timedelta(hours=168)
+t0 = s.t.iloc[0]; tb = t0 + pd.Timedelta(hours=72); tr = t0 + pd.Timedelta(hours=24); ta = s.t[s.ttg <= 168].iloc[0]
 
 # ---------- Fig 1: full run ----------
 fig, ax = plt.subplots(2, 1, figsize=(W2, 3.2), sharex=True)
@@ -39,7 +39,7 @@ for a, col, lab in [(ax[0], 'ratio', 'RMS / baseline mean'), (ax[1], 'kurtosis_p
 ax[0].set_yscale('log'); ax[0].set_yticks([1, 2, 5, 10]); ax[0].set_yticklabels(['1', '2', '5', '10'])
 ax[1].set_ylim(2.5, 20)
 ymax = ax[0].get_ylim()[1]
-for x, txt in [(t0 + pd.Timedelta(hours=2), 'run-in &\nbaseline'), (t0 + pd.Timedelta(hours=450), 'healthy-reference zone (833 h)'), (ta + pd.Timedelta(hours=20), 'final\n7 d')]:
+for x, txt in [(t0 + pd.Timedelta(hours=2), 'run-in &\nbaseline'), (t0 + pd.Timedelta(hours=450), f"healthy-reference zone ({R['ref_hours']:.0f} h)"), (ta + pd.Timedelta(hours=20), 'final\n7 d')]:
     ax[0].text(x, 8.5, txt, fontsize=6.5, color=MUTED, va='top')
 ax[1].xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
 ax[1].set_xlabel('Date (2004)')
@@ -61,10 +61,10 @@ u4 = p * (n + 1) * (n - 1) / (n * (n - p)) * stats.f.ppf(0.9999, p, n - p)
 ax[1].axhline(u4, color=INK, ls='--', lw=0.7); ax[1].text(f7.t.iloc[5], u4 * 1.15, r'UCL ($\alpha$ = 10$^{-4}$)', fontsize=6.5)
 ax[1].set_yscale('log'); ax[1].set_ylabel(r'Hotelling $T^2$')
 for a in ax:
-    a.axvline(pd.Timestamp('2004-04-15 15:42:55'), color=MUTED, lw=0.6, ls='-.')
-    a.axvline(pd.Timestamp('2004-04-17 02:12:55'), color=MUTED, lw=0.6, ls='-.')
-ax[0].text(pd.Timestamp('2004-04-15 16:30'), 6, 'A: Apr 15 15:42\n(58.8 h)', fontsize=6.5, color=MUTED)
-ax[0].text(pd.Timestamp('2004-04-17 03:00'), 6, 'B: Apr 17 02:12\n(24.3 h)', fontsize=6.5, color=MUTED)
+    a.axvline(pd.Timestamp('2004-04-15 15:22:55'), color=MUTED, lw=0.6, ls='-.')
+    a.axvline(pd.Timestamp('2004-04-17 01:52:55'), color=MUTED, lw=0.6, ls='-.')
+ax[0].text(pd.Timestamp('2004-04-15 16:30'), 6, 'A: Apr 15 15:22\n(59.2 h)', fontsize=6.5, color=MUTED, bbox=dict(fc='white', ec='none', pad=1))
+ax[0].text(pd.Timestamp('2004-04-17 01:00'), 3.0, 'B: Apr 17 01:52\n(24.7 h)', fontsize=6.5, color=MUTED, ha='right', bbox=dict(fc='white', ec='none', pad=1))
 ax[1].xaxis.set_major_formatter(mdates.DateFormatter('%b %d\n%H:%M')); ax[1].set_xlabel('Date/time (2004)')
 save(fig, 'Figure3_final_week')
 
@@ -109,23 +109,44 @@ ax[0].set_xlabel(r'Detection probability $p_d$'); ax[0].set_ylabel('Cost rate (U
 ax[0].yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda x, _: f'{x/1000:.0f}k'))
 ax[0].set_title('(a)', loc='left')
 for b, c in cols.items():
-    be = R['cost'][b]['breakeven_fa_per_1000h_lead24']; x = np.array([float(k) for k in be]); y = np.array(list(be.values()))
+    be = R['cost'][b]['breakeven_fa_per_1000h']; x = np.array([float(k) for k in be]); y = np.array(list(be.values()))
     o = np.argsort(x); ax[1].plot(x[o], y[o], color=c, marker='o', ms=3, label=rf'$\beta$={b}')
-ax[1].axhline(R['detectors']['D5 Hotelling T2 (alpha=0.001)']['fa_per_1000h'], color=MUTED, ls=':', lw=0.7)
-ax[1].text(0.755, 7.7, r'$T^2$ at $\alpha$=10$^{-3}$ (7.2)', fontsize=6.5, color=MUTED)
+if len(sys.argv) > 2:
+    _fa = json.load(open(f'{sys.argv[2]}/decision.json'))['D1_1.2x']['fa_per_1000h']
+    ax[1].axhline(_fa, color=MUTED, ls=':', lw=0.8); ax[1].text(0.755, _fa + 0.5, f'D1 1.2x observed: {_fa:.1f}', fontsize=6.5, color=MUTED)
+ax[1].set_ylim(0, None)
 ax[1].set_xlabel(r'Detection probability $p_d$'); ax[1].set_ylabel('Break-even false alarms per 1,000 h')
 ax[1].legend(loc='upper left'); ax[1].set_title('(b)', loc='left')
+if len(sys.argv) > 2:
+    Dd = json.load(open(f'{sys.argv[2]}/decision.json'))
+    for (dn, lab, mk), yb in zip([('D1_2x', 'D1 2x: 2/4 detected', 's'), ('D1_1.2x', 'D1 1.2x: 4/4 detected', 'o')], (16000, 5000)):
+        r = Dd[dn]; c = r['cost_per_1000h']['2.0']
+        ax[0].plot(r['p_hat'], c['cbm_at_phat'], marker=mk, mfc='white', mec=INK, mew=1.0, ms=6, ls='none', label=lab)
+        ax[0].plot(r['ci95'], [yb, yb], color=INK, lw=1.0, marker='|', ms=6)
+        ax[0].text(r['ci95'][0], yb + 2200, f"{lab.split(':')[0]} 95% CI for $p_d$: {r['ci95'][0]:.2f}-{r['ci95'][1]:.2f}", fontsize=6)
+    ax[0].legend(loc='upper right', fontsize=6.0)
 save(fig, 'Figure6_cost')
 
-# ---------- Fig 6: cross-bearing ----------
-fig, ax = plt.subplots(figsize=(W1, 2.3))
-for b, c, lab in [('b1_rms', BLUE, 'B1'), ('b2_rms', ORANGE, 'B2'), ('b3_rms', INK, 'B3 (failed)'), ('b4_rms', AQUA, 'B4')]:
-    mb = R['cross_bearing'][b]['base_mean']; f3[b + 'r'] = f3[b] / mb
-    d = gapped(f3, b + 'r'); ax.plot(d.t, d[b + 'r'], color=c, lw=1.1 if lab.startswith('B3') else 0.8)
-    ax.text(d.t.dropna().iloc[-1] + pd.Timedelta(minutes=40), d[b + 'r'].dropna().iloc[-1], lab, fontsize=6.5, va='center')
-ax.axhline(2, color=INK, ls='--', lw=0.6)
-ax.set_yscale('log'); ax.set_yticks([1, 2, 5, 10]); ax.set_yticklabels(['1', '2', '5', '10'])
-ax.set_ylabel('RMS / own baseline mean'); ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d\n%H:%M'))
-ax.set_xlim(f3.t.iloc[0], f3.t.iloc[-1] + pd.Timedelta(hours=8))
-save(fig, 'Figure4_cross_bearing')
+
 print('ok')
+
+# ---------- Fig: four documented failures (operating hours before end) ----------
+import os
+M2 = sys.argv[2] if len(sys.argv) > 2 else None
+if M2:
+    cases = [('T1', [5, 6], 'Test 1, Bearing 3 (inner race)'), ('T1', [7, 8], 'Test 1, Bearing 4 (rolling element)'),
+             ('T2', [1], 'Test 2, Bearing 1 (outer race)'), ('T3', [3], 'Test 3, Bearing 3 (outer race)')]
+    fig, axs = plt.subplots(2, 2, figsize=(W2, 4.0), sharey=True)
+    for ax, (run, chs, title) in zip(axs.flat, cases):
+        for ci, ch in enumerate(chs):
+            s4 = pd.read_csv(f'{M2}/series_{run}_ch{ch}.csv')
+            s4 = s4[s4.ttg <= 200]
+            ax.plot(-s4.ttg, s4.ratio, color=BLUE if ci == 0 else ORANGE, lw=0.8, label=('x-axis' if ci == 0 else 'y-axis') if len(chs) > 1 else None)
+        ax.axhline(2.0, color=INK, ls='--', lw=0.6); ax.axhline(1.2, color=INK, ls=':', lw=0.7)
+        ax.set_yscale('log'); ax.set_yticks([1, 1.2, 2, 5, 10]); ax.set_yticklabels(['1', '1.2', '2', '5', '10']); ax.minorticks_off()
+        ax.set_title(title, loc='left'); ax.set_xlim(-200, 2)
+        if len(chs) > 1: ax.legend(loc='upper left')
+    for ax in axs[1]: ax.set_xlabel('Operating hours before end of recording')
+    for ax in axs[:, 0]: ax.set_ylabel('RMS / baseline mean')
+    fig.tight_layout(); save(fig, 'Figure4_four_failures')
+print('ok2')
