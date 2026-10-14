@@ -1,20 +1,25 @@
-# Label-free evaluation of bearing early-warning rules (NASA IMS Test 3, Bearing 3)
+# Label-free evaluation of bearing early-warning rules (NASA IMS run-to-failure data)
 
 Code and data for:
 
-> Hora, B. S., & Rezapour Behnagh, S. *Label-Free Evaluation of Bearing Early-Warning Rules and Their Maintenance-Cost Implications: A NASA IMS Run-to-Failure Case Study.* Manuscript submitted to the International Journal of Prognostics and Health Management.
+> Hora, B. S., & Rezapour, S. *Label-Free Evaluation of Bearing Early-Warning Rules on the NASA IMS Run-to-Failure Data: Detection, False Alarms and Maintenance Cost.* Manuscript submitted to the International Journal of Prognostics and Health Management.
 
 ## What is here
 
 | Path | Contents |
 |---|---|
-| `data/bearing3_features.csv` | Per-snapshot features for all 6,324 files of IMS Test 3 (RMS, Pearson kurtosis, skewness, variance, peak-to-peak for Bearing 3; RMS for Bearings 1–4). The last row (2004.04.18.02.42.55) is an invalid snapshot and is excluded by the analysis. |
-| `src/analysis.py` | Data audit, label-free evaluation protocol, detectors D1–D4, threshold sweep, cross-bearing check, threshold-label (leakage) demonstration, renewal-reward cost model. Writes `results/results.json` and `results/series.csv`. |
-| `src/sensitivity.py` | Robustness to alarm persistence (k = 1, 3, 5) and ambiguous-window length (3, 7, 10 days). |
+| `data/bearing3_features.csv` | Test 3 per-snapshot features (Bearing 3 features; RMS of Bearings 1–4), used for the development analysis. |
+| `data/test1_features.csv`, `data/test2_features.csv`, `data/test3_features.csv` | Per-snapshot, per-channel features for all three IMS runs, produced by `src/extract_features.py` from the raw NASA files. |
+| `src/extract_features.py` | Computes the feature tables from the raw IMS snapshot files. |
+| `src/analysis.py` | Test 3 development run: data audit, label-free protocol, detectors, threshold sweep, threshold-label demonstration, renewal-reward cost model. |
+| `src/sensitivity.py` | Robustness to alarm persistence and ambiguous-window length. |
 | `src/threshold_label_demo.py` | Reproduces the supervised classifiers trained on threshold-derived labels. |
+| `src/multi_run.py` | Applies the protocol, unchanged, to all four documented failures (Tests 1–3). |
+| `src/decision.py` | Combines detection and false-alarm rates with the cost model. |
+| `src/tables.py` | Prints Tables 1–4. |
 | `src/figures.py` | Figures 1–6 (PNG at 600 dpi and PDF). |
-| `results/` | Outputs used in the paper. |
-| `figures/` | Figures as they appear in the paper. |
+
+Time is measured in operating hours: the IMS documentation states that longer gaps between files mark resumption of the experiment on the next working day, so each pause longer than 15 min counts as one 10-min interval.
 
 ## Reproduce
 
@@ -24,6 +29,16 @@ bash run_all.sh
 ```
 
 Tested with Python 3.12, numpy 2.5, pandas 3.0, scipy 1.18, scikit-learn 1.9, matplotlib 3.10.
+
+## Rebuilding the feature tables from raw data (optional)
+
+Download the IMS bearing data from the NASA prognostics data repository, extract the three runs, then:
+
+```bash
+python src/extract_features.py 1st_test data/test1_features.csv
+python src/extract_features.py 2nd_test data/test2_features.csv
+python src/extract_features.py 4th_test/txt data/test3_features.csv
+```
 
 ## Source data
 

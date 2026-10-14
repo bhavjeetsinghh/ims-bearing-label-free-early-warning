@@ -1,0 +1,790 @@
+{
+ "n_files": 6324,
+ "excluded_file": "2004.04.18.02.42.55",
+ "excluded_rms": 0.003965660707089,
+ "n_valid": 6323,
+ "start": "2004-03-04 09:27:46",
+ "end": "2004-04-18 02:32:55",
+ "run_hours": 1053.2180555555553,
+ "elapsed_hours": 1073.0858333333333,
+ "gaps": [
+  {
+   "filename": "2004.03.15.12.02.57",
+   "gap_h": 4.5
+  },
+  {
+   "filename": "2004.03.19.10.37.17",
+   "gap_h": 7.53
+  },
+  {
+   "filename": "2004.04.04.03.01.57",
+   "gap_h": 1.17
+  },
+  {
+   "filename": "2004.04.15.10.21.53",
+   "gap_h": 7.33
+  }
+ ],
+ "gap_total_h": 19.86777777777778,
+ "pearson_with_rms": {
+  "rms": 1.0,
+  "kurtosis_pearson": 0.648,
+  "skewness": -0.525,
+  "variance": 0.94,
+  "peak2peak": 0.94
+ },
+ "spearman_var_rms": 0.9999685261786156,
+ "max_rel_diff_var_rms2": 0.01830923895700003,
+ "ranges_valid": {
+  "rms": {
+   "min": 0.0629,
+   "max": 0.7588
+  },
+  "kurtosis_pearson": {
+   "min": 2.7348,
+   "max": 19.7442
+  },
+  "skewness": {
+   "min": -1.6485,
+   "max": 0.1668
+  },
+  "variance": {
+   "min": 0.004,
+   "max": 0.573
+  },
+  "peak2peak": {
+   "min": 0.476,
+   "max": 9.998
+  }
+ },
+ "n_base": 288,
+ "n_ref": 4881,
+ "ref_hours": 813.1174999999998,
+ "day0_vs_base": {
+  "rms": [
+   0.06874171370223454,
+   0.0658085771512716
+  ],
+  "kurtosis_pearson": [
+   3.379155449099489,
+   3.134057700577925
+  ],
+  "peak2peak": [
+   0.7219793103448274,
+   0.59253125
+  ]
+ },
+ "rms_drift_pct": 5.774918011084029,
+ "base_rms_mean": 0.0658085771512716,
+ "base_rms_sd": 0.001259127630635289,
+ "T2_ucl": 19.279339409836496,
+ "detectors": {
+  "D1 RMS > 2x baseline": {
+   "first_alarm_final7d_ttg": 24.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
+   "first_alarm_time": "2004-04-17 02:12:55"
+  },
+  "D2 RMS > mean+3sd": {
+   "first_alarm_final7d_ttg": 167.51722222222213,
+   "fa_episodes_ref": 61,
+   "fa_per_1000h": 75.01990794688346,
+   "episodes_final_7d": 61,
+   "first_alarm_ttg": 607.3505555555553,
+   "sustained_lead_h": 70.51722222222213,
+   "first_alarm_time": "2004-03-23 11:01:57"
+  },
+  "D3 Kurtosis > 6": {
+   "first_alarm_final7d_ttg": 2.3333333333332575,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 2.3333333333332575,
+   "sustained_lead_h": 1.1666666666667425,
+   "first_alarm_time": "2004-04-18 00:12:55"
+  },
+  "D5 Hotelling T2 (alpha=0.001)": {
+   "first_alarm_final7d_ttg": 146.3505555555554,
+   "fa_episodes_ref": 6,
+   "fa_per_1000h": 7.3790073390377175,
+   "episodes_final_7d": 22,
+   "first_alarm_ttg": 506.68388888888865,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-03-27 15:41:57"
+  }
+ },
+ "sweep": [
+  {
+   "detector": "RMS ratio",
+   "thr": 1.1,
+   "first_alarm_final7d_ttg": 142.3505555555554,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 5,
+   "first_alarm_ttg": 142.3505555555554,
+   "sustained_lead_h": 58.999999999999886,
+   "first_alarm_time": "2004-04-11 21:01:57"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.15,
+   "first_alarm_final7d_ttg": 58.833333333333144,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 58.833333333333144,
+   "sustained_lead_h": 58.833333333333144,
+   "first_alarm_time": "2004-04-15 15:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.2,
+   "first_alarm_final7d_ttg": 58.833333333333144,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 4,
+   "first_alarm_ttg": 58.833333333333144,
+   "sustained_lead_h": 43.66666666666663,
+   "first_alarm_time": "2004-04-15 15:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.25,
+   "first_alarm_final7d_ttg": 58.166666666666515,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 4,
+   "first_alarm_ttg": 58.166666666666515,
+   "sustained_lead_h": 41.66666666666663,
+   "first_alarm_time": "2004-04-15 16:22:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.3,
+   "first_alarm_final7d_ttg": 40.66666666666663,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 8,
+   "first_alarm_ttg": 40.66666666666663,
+   "sustained_lead_h": 30.16666666666663,
+   "first_alarm_time": "2004-04-16 09:52:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.35,
+   "first_alarm_final7d_ttg": 28.666666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 28.666666666666742,
+   "sustained_lead_h": 28.666666666666742,
+   "first_alarm_time": "2004-04-16 21:52:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.4,
+   "first_alarm_final7d_ttg": 27.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 27.0,
+   "sustained_lead_h": 27.0,
+   "first_alarm_time": "2004-04-16 23:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.45,
+   "first_alarm_final7d_ttg": 26.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.833333333333258,
+   "sustained_lead_h": 26.833333333333258,
+   "first_alarm_time": "2004-04-16 23:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.5,
+   "first_alarm_final7d_ttg": 26.5,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.5,
+   "sustained_lead_h": 26.5,
+   "first_alarm_time": "2004-04-17 00:02:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.55,
+   "first_alarm_final7d_ttg": 26.5,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.5,
+   "sustained_lead_h": 26.5,
+   "first_alarm_time": "2004-04-17 00:02:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.6,
+   "first_alarm_final7d_ttg": 26.5,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.5,
+   "sustained_lead_h": 26.5,
+   "first_alarm_time": "2004-04-17 00:02:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.65,
+   "first_alarm_final7d_ttg": 26.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
+   "first_alarm_time": "2004-04-17 00:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.7,
+   "first_alarm_final7d_ttg": 26.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
+   "first_alarm_time": "2004-04-17 00:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.75,
+   "first_alarm_final7d_ttg": 26.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 26.333333333333258,
+   "sustained_lead_h": 26.333333333333258,
+   "first_alarm_time": "2004-04-17 00:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.8,
+   "first_alarm_final7d_ttg": 25.5,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 25.5,
+   "sustained_lead_h": 25.5,
+   "first_alarm_time": "2004-04-17 01:02:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.85,
+   "first_alarm_final7d_ttg": 25.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 25.0,
+   "sustained_lead_h": 25.0,
+   "first_alarm_time": "2004-04-17 01:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.9,
+   "first_alarm_final7d_ttg": 25.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 25.0,
+   "sustained_lead_h": 25.0,
+   "first_alarm_time": "2004-04-17 01:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 1.95,
+   "first_alarm_final7d_ttg": 24.666666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.666666666666742,
+   "sustained_lead_h": 24.666666666666742,
+   "first_alarm_time": "2004-04-17 01:52:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.0,
+   "first_alarm_final7d_ttg": 24.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
+   "first_alarm_time": "2004-04-17 02:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.05,
+   "first_alarm_final7d_ttg": 24.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
+   "first_alarm_time": "2004-04-17 02:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.1,
+   "first_alarm_final7d_ttg": 24.166666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.166666666666742,
+   "sustained_lead_h": 21.5,
+   "first_alarm_time": "2004-04-17 02:22:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.15,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.2,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.25,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 21.333333333333258,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.3,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 5,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 18.166666666666742,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.35,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 4,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 14.166666666666742,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.4,
+   "first_alarm_final7d_ttg": 21.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 4,
+   "first_alarm_ttg": 21.333333333333258,
+   "sustained_lead_h": 14.166666666666742,
+   "first_alarm_time": "2004-04-17 05:12:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.45,
+   "first_alarm_final7d_ttg": 21.166666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 21.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:22:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.5,
+   "first_alarm_final7d_ttg": 21.166666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 21.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:22:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.55,
+   "first_alarm_final7d_ttg": 21.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 21.0,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.6,
+   "first_alarm_final7d_ttg": 21.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 21.0,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.65,
+   "first_alarm_final7d_ttg": 21.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 21.0,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.7,
+   "first_alarm_final7d_ttg": 21.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 21.0,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 05:32:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.75,
+   "first_alarm_final7d_ttg": 20.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.5,
+   "first_alarm_time": "2004-04-17 05:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.8,
+   "first_alarm_final7d_ttg": 20.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.333333333333258,
+   "first_alarm_time": "2004-04-17 05:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.85,
+   "first_alarm_final7d_ttg": 20.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.333333333333258,
+   "first_alarm_time": "2004-04-17 05:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.9,
+   "first_alarm_final7d_ttg": 20.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.166666666666742,
+   "first_alarm_time": "2004-04-17 05:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 2.95,
+   "first_alarm_final7d_ttg": 20.833333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 20.833333333333258,
+   "sustained_lead_h": 12.0,
+   "first_alarm_time": "2004-04-17 05:42:55"
+  },
+  {
+   "detector": "RMS ratio",
+   "thr": 3.0,
+   "first_alarm_final7d_ttg": 12.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 1,
+   "first_alarm_ttg": 12.0,
+   "sustained_lead_h": 12.0,
+   "first_alarm_time": "2004-04-17 14:32:55"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.99,
+   "ucl": 13.733983384599815,
+   "first_alarm_final7d_ttg": 162.8505555555554,
+   "fa_episodes_ref": 35,
+   "fa_per_1000h": 43.04420947772002,
+   "episodes_final_7d": 59,
+   "first_alarm_ttg": 508.18388888888865,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-03-27 14:11:57"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.995,
+   "ucl": 15.415223858401264,
+   "first_alarm_final7d_ttg": 160.01722222222213,
+   "fa_episodes_ref": 25,
+   "fa_per_1000h": 30.745863912657157,
+   "episodes_final_7d": 47,
+   "first_alarm_ttg": 508.18388888888865,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-03-27 14:11:57"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.999,
+   "ucl": 19.279339409836496,
+   "first_alarm_final7d_ttg": 146.3505555555554,
+   "fa_episodes_ref": 6,
+   "fa_per_1000h": 7.3790073390377175,
+   "episodes_final_7d": 22,
+   "first_alarm_ttg": 506.68388888888865,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-03-27 15:41:57"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.9995,
+   "ucl": 20.934009475541863,
+   "first_alarm_final7d_ttg": 146.3505555555554,
+   "fa_episodes_ref": 1,
+   "fa_per_1000h": 1.2298345565062863,
+   "episodes_final_7d": 16,
+   "first_alarm_ttg": 388.017222222222,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-04-01 14:21:57"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.9999,
+   "ucl": 24.768366692065474,
+   "first_alarm_final7d_ttg": 142.3505555555554,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 10,
+   "first_alarm_ttg": 142.3505555555554,
+   "sustained_lead_h": 59.666666666666515,
+   "first_alarm_time": "2004-04-11 21:01:57"
+  },
+  {
+   "detector": "T2",
+   "thr": 0.99999,
+   "ucl": 30.260117053074108,
+   "first_alarm_final7d_ttg": 63.333333333333144,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 63.333333333333144,
+   "sustained_lead_h": 58.999999999999886,
+   "first_alarm_time": "2004-04-15 11:12:55"
+  }
+ ],
+ "cross_bearing": {
+  "b1_rms": {
+   "base_mean": 0.0741867031754162,
+   "first_alarm_final7d_ttg": null,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 0,
+   "first_alarm_ttg": null,
+   "sustained_lead_h": null,
+   "first_alarm_time": null
+  },
+  "b2_rms": {
+   "base_mean": 0.08527089218719995,
+   "first_alarm_final7d_ttg": 3.0,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 3.0,
+   "sustained_lead_h": 3.0,
+   "first_alarm_time": "2004-04-17 23:32:55"
+  },
+  "b3_rms": {
+   "base_mean": 0.0658085771512716,
+   "first_alarm_final7d_ttg": 24.333333333333258,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 2,
+   "first_alarm_ttg": 24.333333333333258,
+   "sustained_lead_h": 21.833333333333258,
+   "first_alarm_time": "2004-04-17 02:12:55"
+  },
+  "b4_rms": {
+   "base_mean": 0.05101584498666224,
+   "first_alarm_final7d_ttg": 24.166666666666742,
+   "fa_episodes_ref": 0,
+   "fa_per_1000h": 0.0,
+   "episodes_final_7d": 3,
+   "first_alarm_ttg": 24.166666666666742,
+   "sustained_lead_h": 13.833333333333258,
+   "first_alarm_time": "2004-04-17 02:22:55"
+  }
+ },
+ "leakage": {
+  "ALR": {
+   "fp": 13,
+   "fn": 0,
+   "fp_first": "2004-04-16 23:42:55",
+   "fp_last": "2004-04-17 01:42:55"
+  },
+  "ARF": {
+   "fp": 13,
+   "fn": 0,
+   "fp_first": "2004-04-16 23:42:55",
+   "fp_last": "2004-04-17 01:42:55"
+  },
+  "BLR": {
+   "fp": 13,
+   "fn": 0,
+   "fp_first": "2004-04-16 23:42:55",
+   "fp_last": "2004-04-17 01:42:55"
+  },
+  "BRF": {
+   "fp": 13,
+   "fn": 0,
+   "fp_first": "2004-04-16 23:42:55",
+   "fp_last": "2004-04-17 01:42:55"
+  },
+  "all_four_identical": true,
+  "implied_rms_threshold_g": 0.10864505531169896,
+  "label_onset": "2004-04-17 01:52:55",
+  "label_ttg": 24.666666666666742,
+  "test_healthy_from": "2004-04-15 02:41:57"
+ },
+ "costs": {
+  "Cp": 14500,
+  "Cf": 88000,
+  "Cfa": 2500
+ },
+ "cost_lead_h": 21.833333333333258,
+ "cost": {
+  "1.5": {
+   "eta": 1166.6835194595694,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 662.7977022577451,
+   "age_opt_frac_mean": 0.629307196892034,
+   "age_per_1000h": 71226.15566737662,
+   "D1 RMS > 2x baseline": {
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
+   },
+   "D5 Hotelling T2 (alpha=0.001)": {
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
+   },
+   "breakeven_fa_per_1000h": {
+    "1.0": 22.866954496248635,
+    "0.95": 21.4491390190421,
+    "0.9": 20.034318568409052,
+    "0.85": 18.622483664216254,
+    "0.8": 17.21362486629814,
+    "0.75": 15.807732774246425
+   },
+   "max_monitoring_cost_per_h_D1_pd1": 57.16738624062159,
+   "breakeven_pd_zeroFA": 0.18046209831570717
+  },
+  "2.0": {
+   "eta": 1188.4293122977328,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 536.6885965997203,
+   "age_opt_frac_mean": 0.509570258284858,
+   "age_per_1000h": 55858.97907153305,
+   "D1 RMS > 2x baseline": {
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
+   },
+   "D5 Hotelling T2 (alpha=0.001)": {
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
+   },
+   "breakeven_fa_per_1000h": {
+    "1.0": 16.720083857911206,
+    "0.95": 15.302268380704668,
+    "0.9": 13.887447930071625,
+    "0.85": 12.475613025878827,
+    "0.8": 11.066754227960713,
+    "0.75": 9.660862135909
+   },
+   "max_monitoring_cost_per_h_D1_pd1": 41.80020964477802,
+   "breakeven_pd_zeroFA": 0.4035438336990138
+  },
+  "3.0": {
+   "eta": 1179.442576128892,
+   "rtf_per_1000h": 83553.44796437376,
+   "age_opt_T": 547.1981185266848,
+   "age_opt_frac_mean": 0.5195487445741203,
+   "age_per_1000h": 40240.87305510984,
+   "D1 RMS > 2x baseline": {
+    "1.0": 14058.769426755025,
+    "0.95": 17603.308119771373,
+    "0.9": 21140.359246353986,
+    "0.8": 28192.093501631265
+   },
+   "D5 Hotelling T2 (alpha=0.001)": {
+    "1.0": 33041.63009878985,
+    "0.95": 36685.718778253315,
+    "0.9": 40308.05391126178,
+    "0.8": 47488.23806680103
+   },
+   "breakeven_fa_per_1000h": {
+    "1.0": 10.472841451341928,
+    "0.95": 9.055025974135388,
+    "0.9": 7.640205523502343,
+    "0.85": 6.228370619309544,
+    "0.8": 4.819511821391432,
+    "0.75": 3.413619729339719
+   },
+   "max_monitoring_cost_per_h_D1_pd1": 26.182103628354817,
+   "breakeven_pd_zeroFA": 0.6281561791694251
+  }
+ }
+}

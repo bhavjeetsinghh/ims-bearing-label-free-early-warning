@@ -1,0 +1,1508 @@
+{
+ "runs": {
+  "T1": {
+   "run": "T1",
+   "files": 2156,
+   "excluded_dead": [],
+   "op_hours": 345.26555555556126,
+   "elapsed_hours": 827.5588888888889,
+   "pauses": 24,
+   "pause_hours": 486.2933333333334
+  },
+  "T2": {
+   "run": "T2",
+   "files": 982,
+   "excluded_dead": [
+    "2004.02.19.06.22.39",
+    "2004.02.19.06.12.39"
+   ],
+   "op_hours": 163.49999999999943,
+   "elapsed_hours": 163.5,
+   "pauses": 0,
+   "pause_hours": 0.0
+  },
+  "T3": {
+   "run": "T3",
+   "files": 6323,
+   "excluded_dead": [
+    "2004.04.18.02.42.55"
+   ],
+   "op_hours": 1053.2180555554758,
+   "elapsed_hours": 1073.0858333333333,
+   "pauses": 4,
+   "pause_hours": 20.534444444444443
+  }
+ },
+ "results": [
+  {
+   "run": "T1",
+   "channel": 1,
+   "bearing": 1,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.15078973837527976,
+   "base_sd": 0.002222929539561362,
+   "end_ratio": 1.1551277165687606,
+   "max_ratio_final": 1.1603899829285327,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 59.854722222228986,
+    "first_final_time": "2003-11-22 09:56:56",
+    "sustained": 5.6097222222228424,
+    "sustained_elapsed": 12.539999999999964,
+    "sustained_start": "2003-11-25 11:07:32"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 3.7763888888893007,
+    "first_final_time": "2003-11-25 12:57:32",
+    "sustained": 3.7763888888893007,
+    "sustained_elapsed": 10.706666666666706,
+    "sustained_start": "2003-11-25 12:57:32"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 5.109722222222786,
+    "first_final_time": "2003-11-25 11:37:32",
+    "sustained": 5.109722222222786,
+    "sustained_elapsed": 12.039999999999964,
+    "sustained_start": "2003-11-25 11:37:32"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 2,
+   "bearing": 1,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.14508956679182416,
+   "base_sd": 0.002414311175225768,
+   "end_ratio": 1.088923384228263,
+   "max_ratio_final": 1.0983797544692164,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 2.9430555555558726,
+    "first_final_time": "2003-11-25 13:47:32",
+    "sustained": 2.9430555555558726,
+    "sustained_elapsed": 9.873333333333335,
+    "sustained_start": "2003-11-25 13:47:32"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 5,
+    "fa_per_1000h": 47.530650668202284,
+    "first_final": 97.83833333334428,
+    "first_final_time": "2003-11-20 12:29:03",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 7,
+    "fa_per_1000h": 66.54291093548319,
+    "first_final": 97.83833333334428,
+    "first_final_time": "2003-11-20 12:29:03",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 3,
+   "bearing": 2,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.15016126097918095,
+   "base_sd": 0.000910277615342248,
+   "end_ratio": 1.410885736985661,
+   "max_ratio_final": 1.410885736985661,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 1.7763888888890733,
+    "first_final_time": "2003-11-25 14:57:32",
+    "sustained": 1.7763888888890733,
+    "sustained_elapsed": 8.706666666666706,
+    "sustained_start": "2003-11-25 14:57:32"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 65.68805555556298,
+    "first_final_time": "2003-11-22 04:06:56",
+    "sustained": 18.003333333335377,
+    "sustained_elapsed": 37.4755555555555,
+    "sustained_start": "2003-11-24 10:11:24"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 57.85472222222876,
+    "first_final_time": "2003-11-22 11:56:56",
+    "sustained": 10.443055555556725,
+    "sustained_elapsed": 28.039999999999964,
+    "sustained_start": "2003-11-24 19:37:32"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 60.688055555562414,
+    "first_final_time": "2003-11-22 09:06:56",
+    "sustained": 10.443055555556725,
+    "sustained_elapsed": 28.039999999999964,
+    "sustained_start": "2003-11-24 19:37:32"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 4,
+   "bearing": 2,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.1417454779260171,
+   "base_sd": 0.0008277416667697771,
+   "end_ratio": 1.4222466188549339,
+   "max_ratio_final": 1.4222466188549339,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 0.16666666666668561,
+    "first_final_time": "2003-11-25 23:29:56",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 9.609722222223297,
+    "first_final_time": "2003-11-24 20:27:32",
+    "sustained": 6.943055555556327,
+    "sustained_elapsed": 24.539999999999964,
+    "sustained_start": "2003-11-24 23:07:32"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 139.94916666667532,
+    "first_final_time": "2003-11-17 13:42:30",
+    "sustained": 5.776388888889528,
+    "sustained_elapsed": 12.706666666666706,
+    "sustained_start": "2003-11-25 10:57:32"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 151.84194444445242,
+    "first_final_time": "2003-11-16 12:08:46",
+    "sustained": 6.109722222222899,
+    "sustained_elapsed": 23.706666666666706,
+    "sustained_start": "2003-11-24 23:57:32"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 5,
+   "bearing": 3,
+   "failed": "inner race",
+   "n_base": 288,
+   "base_rms": 0.15961447105455692,
+   "base_sd": 0.0009864370355664182,
+   "end_ratio": 3.71902288864628,
+   "max_ratio_final": 3.71902288864628,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 0.16666666666668561,
+    "first_final_time": "2003-11-25 23:29:56",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 5.6097222222228424,
+    "first_final_time": "2003-11-25 11:07:32",
+    "sustained": 5.6097222222228424,
+    "sustained_elapsed": 12.539999999999964,
+    "sustained_start": "2003-11-25 11:07:32"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 71.02138888889692,
+    "first_final_time": "2003-11-21 22:46:56",
+    "sustained": 60.52138888889573,
+    "sustained_elapsed": 86.38333333333333,
+    "sustained_start": "2003-11-22 09:16:56"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 53.854722222228304,
+    "first_final_time": "2003-11-22 15:56:56",
+    "sustained": 0.33333333333337123,
+    "sustained_elapsed": 0.33333333333337123,
+    "sustained_start": "2003-11-25 23:19:56"
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 1,
+    "fa_per_1000h": 9.506130133640458,
+    "first_final": 163.1752777777851,
+    "first_final_time": "2003-11-16 00:48:46",
+    "sustained": 56.521388888895274,
+    "sustained_elapsed": 82.38333333333333,
+    "sustained_start": "2003-11-22 13:16:56"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 7,
+    "fa_per_1000h": 66.54291093548319,
+    "first_final": 163.1752777777851,
+    "first_final_time": "2003-11-16 00:48:46",
+    "sustained": 60.688055555562414,
+    "sustained_elapsed": 86.54999999999995,
+    "sustained_start": "2003-11-22 09:06:56"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 6,
+   "bearing": 3,
+   "failed": "inner race",
+   "n_base": 288,
+   "base_rms": 0.16263792011026457,
+   "base_sd": 0.0011704728693857716,
+   "end_ratio": 3.049723996272732,
+   "max_ratio_final": 3.049723996272732,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 0.16666666666668561,
+    "first_final_time": "2003-11-25 23:29:56",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 5.6097222222228424,
+    "first_final_time": "2003-11-25 11:07:32",
+    "sustained": 5.6097222222228424,
+    "sustained_elapsed": 12.539999999999964,
+    "sustained_start": "2003-11-25 11:07:32"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 76.52138888889755,
+    "first_final_time": "2003-11-21 17:16:56",
+    "sustained": 57.68805555556207,
+    "sustained_elapsed": 83.54999999999995,
+    "sustained_start": "2003-11-22 12:06:56"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 41.321944444449116,
+    "first_final_time": "2003-11-23 07:16:56",
+    "sustained": 0.16666666666668561,
+    "sustained_elapsed": 0.16666666666662877,
+    "sustained_start": "2003-11-25 23:29:56"
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 71.85472222223035,
+    "first_final_time": "2003-11-21 21:56:56",
+    "sustained": 51.521388888894705,
+    "sustained_elapsed": 77.38333333333333,
+    "sustained_start": "2003-11-22 18:16:56"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 71.85472222223035,
+    "first_final_time": "2003-11-21 21:56:56",
+    "sustained": 58.021388888895444,
+    "sustained_elapsed": 83.88333333333333,
+    "sustained_start": "2003-11-22 11:46:56"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 7,
+   "bearing": 4,
+   "failed": "rolling element",
+   "n_base": 288,
+   "base_rms": 0.13826905039828047,
+   "base_sd": 0.0027143844572667724,
+   "end_ratio": 1.6574648497648956,
+   "max_ratio_final": 1.6961282404927824,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 80.45527777778688,
+    "first_final_time": "2003-11-21 10:48:36",
+    "sustained": 7.776388888889755,
+    "sustained_elapsed": 25.373333333333335,
+    "sustained_start": "2003-11-24 22:17:32"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 94.42166666667723,
+    "first_final_time": "2003-11-20 15:54:03",
+    "sustained": 94.42166666667723,
+    "sustained_elapsed": 127.76472222222219,
+    "sustained_start": "2003-11-20 15:54:03"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 109.31277777778817,
+    "first_final_time": "2003-11-19 11:36:07",
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 113.61583333334349,
+    "first_final_time": "2003-11-18 16:02:30",
+    "sustained": 110.28250000001034,
+    "sustained_elapsed": 158.5630555555556,
+    "sustained_start": "2003-11-19 09:06:09"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 128.44916666667598,
+    "first_final_time": "2003-11-18 01:12:30",
+    "sustained": 113.61583333334349,
+    "sustained_elapsed": 175.62388888888893,
+    "sustained_start": "2003-11-18 16:02:30"
+   }
+  },
+  {
+   "run": "T1",
+   "channel": 8,
+   "bearing": 4,
+   "failed": "rolling element",
+   "n_base": 288,
+   "base_rms": 0.1403587436334664,
+   "base_sd": 0.0018942202590744022,
+   "end_ratio": 1.4956512446453778,
+   "max_ratio_final": 1.5237771173183454,
+   "D1_2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 78.28861111111996,
+    "first_final_time": "2003-11-21 12:58:36",
+    "sustained": 78.28861111111996,
+    "sustained_elapsed": 106.68888888888887,
+    "sustained_start": "2003-11-21 12:58:36"
+   },
+   "D2": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 101.8127777777886,
+    "first_final_time": "2003-11-19 19:06:07",
+    "sustained": 98.97944444445542,
+    "sustained_elapsed": 145.73027777777781,
+    "sustained_start": "2003-11-19 21:56:07"
+   },
+   "D3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 89.27611111112114,
+    "first_final_time": "2003-11-20 23:54:03",
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 3,
+    "fa_per_1000h": 28.51839040092137,
+    "first_final": 149.34194444445257,
+    "first_final_time": "2003-11-16 14:38:46",
+    "sustained": 105.97944444445503,
+    "sustained_elapsed": 152.73027777777781,
+    "sustained_start": "2003-11-19 14:56:07"
+   },
+   "D4_1e-3": {
+    "ref_hours": 105.19527777777655,
+    "fa_assessable": true,
+    "fa_episodes": 4,
+    "fa_per_1000h": 38.02452053456183,
+    "first_final": 149.34194444445257,
+    "first_final_time": "2003-11-16 14:38:46",
+    "sustained": 111.44916666667694,
+    "sustained_elapsed": 173.45722222222219,
+    "sustained_start": "2003-11-18 18:12:30"
+   }
+  },
+  {
+   "run": "T2",
+   "channel": 1,
+   "bearing": 1,
+   "failed": "outer race",
+   "n_base": 289,
+   "base_rms": 0.07704424845360203,
+   "base_sd": 0.0009788933695057192,
+   "end_ratio": 6.279967746623639,
+   "max_ratio_final": 9.410195884533636,
+   "D1_2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 46.16666666666495,
+    "first_final_time": "2004-02-17 07:52:39",
+    "sustained": 12.333333333332632,
+    "sustained_elapsed": 12.333333333333343,
+    "sustained_start": "2004-02-18 17:42:39"
+   },
+   "D1_1.2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 62.33333333333208,
+    "first_final_time": "2004-02-16 15:42:39",
+    "sustained": 62.33333333333208,
+    "sustained_elapsed": 62.33333333333333,
+    "sustained_start": "2004-02-16 15:42:39"
+   },
+   "D2": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 74.49999999999909,
+    "first_final_time": "2004-02-16 03:32:39",
+    "sustained": 74.49999999999909,
+    "sustained_elapsed": 74.5,
+    "sustained_start": "2004-02-16 03:32:39"
+   },
+   "D3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 0.9999999999999432,
+    "first_final_time": "2004-02-19 05:02:39",
+    "sustained": 0.9999999999999432,
+    "sustained_elapsed": 1.0,
+    "sustained_start": "2004-02-19 05:02:39"
+   },
+   "D4_1e-4": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 74.49999999999909,
+    "first_final_time": "2004-02-16 03:32:39",
+    "sustained": 74.49999999999909,
+    "sustained_elapsed": 74.5,
+    "sustained_start": "2004-02-16 03:32:39"
+   },
+   "D4_1e-3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 74.49999999999909,
+    "first_final_time": "2004-02-16 03:32:39",
+    "sustained": 74.49999999999909,
+    "sustained_elapsed": 74.5,
+    "sustained_start": "2004-02-16 03:32:39"
+   }
+  },
+  {
+   "run": "T2",
+   "channel": 2,
+   "bearing": 2,
+   "failed": null,
+   "n_base": 289,
+   "base_rms": 0.09404465916055664,
+   "base_sd": 0.0010813251299528048,
+   "end_ratio": 2.0590333875425535,
+   "max_ratio_final": 2.3211788703084704,
+   "D1_2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 12.999999999999261,
+    "first_final_time": "2004-02-18 17:02:39",
+    "sustained": 12.999999999999261,
+    "sustained_elapsed": 13.0,
+    "sustained_start": "2004-02-18 17:02:39"
+   },
+   "D2": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 46.16666666666495,
+    "first_final_time": "2004-02-17 07:52:39",
+    "sustained": 27.166666666665122,
+    "sustained_elapsed": 27.166666666666657,
+    "sustained_start": "2004-02-18 02:52:39"
+   },
+   "D3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 26.16666666666518,
+    "first_final_time": "2004-02-18 03:52:39",
+    "sustained": 26.16666666666518,
+    "sustained_elapsed": 26.166666666666657,
+    "sustained_start": "2004-02-18 03:52:39"
+   },
+   "D4_1e-3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 39.333333333331424,
+    "first_final_time": "2004-02-17 14:42:39",
+    "sustained": 26.16666666666518,
+    "sustained_elapsed": 26.166666666666657,
+    "sustained_start": "2004-02-18 03:52:39"
+   }
+  },
+  {
+   "run": "T2",
+   "channel": 3,
+   "bearing": 3,
+   "failed": null,
+   "n_base": 289,
+   "base_rms": 0.10027947062267968,
+   "base_sd": 0.001860667266755542,
+   "end_ratio": 1.8688316462122585,
+   "max_ratio_final": 1.8688316462122585,
+   "D1_2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 12.166666666665975,
+    "first_final_time": "2004-02-18 17:52:39",
+    "sustained": 12.166666666665975,
+    "sustained_elapsed": 12.166666666666657,
+    "sustained_start": "2004-02-18 17:52:39"
+   },
+   "D2": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 18.166666666665634,
+    "first_final_time": "2004-02-18 11:52:39",
+    "sustained": 18.166666666665634,
+    "sustained_elapsed": 18.166666666666657,
+    "sustained_start": "2004-02-18 11:52:39"
+   },
+   "D3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 17.499999999999005,
+    "first_final_time": "2004-02-18 12:32:39",
+    "sustained": 17.499999999999005,
+    "sustained_elapsed": 17.5,
+    "sustained_start": "2004-02-18 12:32:39"
+   },
+   "D4_1e-3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 17.83333333333232,
+    "first_final_time": "2004-02-18 12:12:39",
+    "sustained": 17.83333333333232,
+    "sustained_elapsed": 17.833333333333343,
+    "sustained_start": "2004-02-18 12:12:39"
+   }
+  },
+  {
+   "run": "T2",
+   "channel": 4,
+   "bearing": 4,
+   "failed": null,
+   "n_base": 289,
+   "base_rms": 0.055417995081002244,
+   "base_sd": 0.0006381409146048997,
+   "end_ratio": 2.356316540768358,
+   "max_ratio_final": 2.6769485975490155,
+   "D1_2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 1.666666666666572,
+    "first_final_time": "2004-02-19 04:22:39",
+    "sustained": 1.666666666666572,
+    "sustained_elapsed": 1.6666666666666572,
+    "sustained_start": "2004-02-19 04:22:39"
+   },
+   "D1_1.2x": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 17.499999999999005,
+    "first_final_time": "2004-02-18 12:32:39",
+    "sustained": 17.499999999999005,
+    "sustained_elapsed": 17.5,
+    "sustained_start": "2004-02-18 12:32:39"
+   },
+   "D2": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 55.16666666666521,
+    "first_final_time": "2004-02-16 22:52:39",
+    "sustained": 53.99999999999851,
+    "sustained_elapsed": 54.0,
+    "sustained_start": "2004-02-17 00:02:39"
+   },
+   "D3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 53.16666666666515,
+    "first_final_time": "2004-02-17 00:52:39",
+    "sustained": 46.666666666664966,
+    "sustained_elapsed": 46.66666666666667,
+    "sustained_start": "2004-02-17 07:22:39"
+   },
+   "D4_1e-3": {
+    "ref_hours": 0.0,
+    "fa_assessable": false,
+    "fa_episodes": null,
+    "fa_per_1000h": null,
+    "first_final": 53.33333333333182,
+    "first_final_time": "2004-02-17 00:42:39",
+    "sustained": 46.666666666664966,
+    "sustained_elapsed": 46.66666666666667,
+    "sustained_start": "2004-02-17 07:22:39"
+   }
+  },
+  {
+   "run": "T3",
+   "channel": 1,
+   "bearing": 1,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.0741867031754162,
+   "base_sd": 0.0025335268026476215,
+   "end_ratio": 2.0823384960329574,
+   "max_ratio_final": 2.091247013177987,
+   "D1_2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D1_1.2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 20.500000000009322,
+    "first_final_time": "2004-04-17 06:02:55",
+    "sustained": 18.000000000008185,
+    "sustained_elapsed": 18.0,
+    "sustained_start": "2004-04-17 08:32:55"
+   },
+   "D2": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 58.833333333339965,
+    "first_final_time": "2004-04-15 15:42:55",
+    "sustained": 26.33333333334531,
+    "sustained_elapsed": 26.333333333333258,
+    "sustained_start": "2004-04-17 00:12:55"
+   },
+   "D3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 58.833333333339965,
+    "first_final_time": "2004-04-15 15:42:55",
+    "sustained": 26.33333333334531,
+    "sustained_elapsed": 26.333333333333258,
+    "sustained_start": "2004-04-17 00:12:55"
+   },
+   "D4_1e-3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 58.833333333339965,
+    "first_final_time": "2004-04-15 15:42:55",
+    "sustained": 26.833333333345536,
+    "sustained_elapsed": 26.833333333333258,
+    "sustained_start": "2004-04-16 23:42:55"
+   }
+  },
+  {
+   "run": "T3",
+   "channel": 2,
+   "bearing": 2,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.08527089218719995,
+   "base_sd": 0.001134584616488067,
+   "end_ratio": 3.0162727571967523,
+   "max_ratio_final": 3.2000752099397856,
+   "D1_2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 3.0000000000013642,
+    "first_final_time": "2004-04-17 23:32:55",
+    "sustained": 3.0000000000013642,
+    "sustained_elapsed": 3.0,
+    "sustained_start": "2004-04-17 23:32:55"
+   },
+   "D1_1.2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 25.500000000011596,
+    "first_final_time": "2004-04-17 01:02:55",
+    "sustained": 25.500000000011596,
+    "sustained_elapsed": 25.5,
+    "sustained_start": "2004-04-17 01:02:55"
+   },
+   "D2": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 27.666666666679248,
+    "first_final_time": "2004-04-16 22:52:55",
+    "sustained": 27.666666666679248,
+    "sustained_elapsed": 27.666666666666742,
+    "sustained_start": "2004-04-16 22:52:55"
+   },
+   "D3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 111,
+    "fa_per_1000h": 136.51163577220808,
+    "first_final": 167.85055555553743,
+    "first_final_time": "2004-04-10 19:31:57",
+    "sustained": 28.50000000001296,
+    "sustained_elapsed": 28.5,
+    "sustained_start": "2004-04-16 22:02:55"
+   },
+   "D4_1e-3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 115,
+    "fa_per_1000h": 141.43097399823358,
+    "first_final": 167.85055555553743,
+    "first_final_time": "2004-04-10 19:31:57",
+    "sustained": 28.50000000001296,
+    "sustained_elapsed": 28.5,
+    "sustained_start": "2004-04-16 22:02:55"
+   }
+  },
+  {
+   "run": "T3",
+   "channel": 3,
+   "bearing": 3,
+   "failed": "outer race",
+   "n_base": 288,
+   "base_rms": 0.0658085771512716,
+   "base_sd": 0.001259127630635289,
+   "end_ratio": 11.529882858462258,
+   "max_ratio_final": 11.529882858462258,
+   "D1_2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 24.3333333333444,
+    "first_final_time": "2004-04-17 02:12:55",
+    "sustained": 21.833333333343262,
+    "sustained_elapsed": 21.833333333333258,
+    "sustained_start": "2004-04-17 04:42:55"
+   },
+   "D1_1.2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 58.833333333339965,
+    "first_final_time": "2004-04-15 15:42:55",
+    "sustained": 43.66666666667675,
+    "sustained_elapsed": 43.66666666666674,
+    "sustained_start": "2004-04-16 06:52:55"
+   },
+   "D2": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 61,
+    "fa_per_1000h": 75.01990794688912,
+    "first_final": 167.51722222220417,
+    "first_final_time": "2004-04-10 19:51:57",
+    "sustained": 70.51722222222622,
+    "sustained_elapsed": 77.6827777777778,
+    "sustained_start": "2004-04-14 20:51:57"
+   },
+   "D3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 2.3333333333343944,
+    "first_final_time": "2004-04-18 00:12:55",
+    "sustained": 1.1666666666671972,
+    "sustained_elapsed": 1.1666666666667425,
+    "sustained_start": "2004-04-18 01:22:55"
+   },
+   "D4_1e-4": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 142.35055555554322,
+    "first_final_time": "2004-04-11 21:01:57",
+    "sustained": 59.66666666667311,
+    "sustained_elapsed": 59.66666666666663,
+    "sustained_start": "2004-04-15 14:52:55"
+   },
+   "D4_1e-3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 6,
+    "fa_per_1000h": 7.379007339038274,
+    "first_final": 146.35055555554231,
+    "first_final_time": "2004-04-11 17:01:57",
+    "sustained": 59.66666666667311,
+    "sustained_elapsed": 59.66666666666663,
+    "sustained_start": "2004-04-15 14:52:55"
+   }
+  },
+  {
+   "run": "T3",
+   "channel": 4,
+   "bearing": 4,
+   "failed": null,
+   "n_base": 288,
+   "base_rms": 0.05101584498666224,
+   "base_sd": 0.0010422701428394734,
+   "end_ratio": 5.531112657572961,
+   "max_ratio_final": 6.115126849052711,
+   "D1_2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": 24.166666666677656,
+    "first_final_time": "2004-04-17 02:22:55",
+    "sustained": 13.833333333339624,
+    "sustained_elapsed": 13.833333333333258,
+    "sustained_start": "2004-04-17 12:42:55"
+   },
+   "D1_1.2x": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 2,
+    "fa_per_1000h": 2.459669113012758,
+    "first_final": 41.6666666666772,
+    "first_final_time": "2004-04-16 08:52:55",
+    "sustained": 27.500000000012506,
+    "sustained_elapsed": 27.5,
+    "sustained_start": "2004-04-16 23:02:55"
+   },
+   "D2": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 90,
+    "fa_per_1000h": 110.68511008557412,
+    "first_final": 167.85055555553743,
+    "first_final_time": "2004-04-10 19:31:57",
+    "sustained": 232.68388888885602,
+    "sustained_elapsed": 239.84944444444443,
+    "sustained_start": "2004-04-08 02:41:57"
+   },
+   "D3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 0,
+    "fa_per_1000h": 0.0,
+    "first_final": null,
+    "first_final_time": null,
+    "sustained": null,
+    "sustained_elapsed": null,
+    "sustained_start": null
+   },
+   "D4_1e-4": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 176,
+    "fa_per_1000h": 216.45088194512272,
+    "first_final": 167.51722222220417,
+    "first_final_time": "2004-04-10 19:51:57",
+    "sustained": 64.16666666667209,
+    "sustained_elapsed": 64.16666666666663,
+    "sustained_start": "2004-04-15 10:22:55"
+   },
+   "D4_1e-3": {
+    "ref_hours": 813.1174999999384,
+    "fa_assessable": true,
+    "fa_episodes": 156,
+    "fa_per_1000h": 191.85419081499515,
+    "first_final": 167.51722222220417,
+    "first_final_time": "2004-04-10 19:51:57",
+    "sustained": 69.35055555555982,
+    "sustained_elapsed": 76.51611111111106,
+    "sustained_start": "2004-04-14 22:01:57"
+   }
+  }
+ ],
+ "detection": {
+  "D1_2x": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 0.16666666666668561,
+     "detected": false
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": null,
+     "detected": false
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 12.333333333332632,
+     "detected": true
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 21.833333333343262,
+     "detected": true
+    }
+   ],
+   "detected": 2,
+   "n": 4,
+   "ci95": [
+    0.06758598648854294,
+    0.932414013511457
+   ]
+  },
+  "D1_1.2x": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 5.6097222222228424,
+     "detected": true
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": 78.28861111111996,
+     "detected": true
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 62.33333333333208,
+     "detected": true
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 43.66666666667675,
+     "detected": true
+    }
+   ],
+   "detected": 4,
+   "n": 4,
+   "ci95": [
+    0.3976353643835253,
+    1.0
+   ]
+  },
+  "D2": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 60.52138888889573,
+     "detected": true
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": 98.97944444445542,
+     "detected": true
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 74.49999999999909,
+     "detected": true
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 70.51722222222622,
+     "detected": true
+    }
+   ],
+   "detected": 4,
+   "n": 4,
+   "ci95": [
+    0.3976353643835253,
+    1.0
+   ]
+  },
+  "D3": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 0.33333333333337123,
+     "detected": false
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": null,
+     "detected": false
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 0.9999999999999432,
+     "detected": false
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 1.1666666666671972,
+     "detected": false
+    }
+   ],
+   "detected": 0,
+   "n": 4,
+   "ci95": [
+    0.0,
+    0.6023646356164746
+   ]
+  },
+  "D4_1e-4": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 56.521388888895274,
+     "detected": true
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": 110.28250000001034,
+     "detected": true
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 74.49999999999909,
+     "detected": true
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 59.66666666667311,
+     "detected": true
+    }
+   ],
+   "detected": 4,
+   "n": 4,
+   "ci95": [
+    0.3976353643835253,
+    1.0
+   ]
+  },
+  "D4_1e-3": {
+   "cases": [
+    {
+     "run": "T1",
+     "bearing": 3,
+     "mode": "inner race",
+     "lead": 60.688055555562414,
+     "detected": true
+    },
+    {
+     "run": "T1",
+     "bearing": 4,
+     "mode": "rolling element",
+     "lead": 113.61583333334349,
+     "detected": true
+    },
+    {
+     "run": "T2",
+     "bearing": 1,
+     "mode": "outer race",
+     "lead": 74.49999999999909,
+     "detected": true
+    },
+    {
+     "run": "T3",
+     "bearing": 3,
+     "mode": "outer race",
+     "lead": 59.66666666667311,
+     "detected": true
+    }
+   ],
+   "detected": 4,
+   "n": 4,
+   "ci95": [
+    0.3976353643835253,
+    1.0
+   ]
+  }
+ },
+ "settings": {
+  "runin": 24.0,
+  "base_end": 72.0,
+  "ambig": 168.0,
+  "k": 3,
+  "min_lead": 4.0,
+  "min_ref_h": 100.0
+ }
+}

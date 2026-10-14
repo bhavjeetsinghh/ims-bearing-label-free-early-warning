@@ -1,9 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the paper."
-title: "Label-free evaluation of bearing early-warning rules (NASA IMS Test 3, Bearing 3)"
+title: "Label-free evaluation of bearing early-warning rules on the NASA IMS run-to-failure data"
 authors:
   - family-names: Hora
     given-names: Bhavjeet Singh
-  - family-names: Rezapour Behnagh
+    orcid: "https://orcid.org/0009-0004-1991-0108"
+  - family-names: Rezapour
     given-names: Shabnam
+    orcid: "https://orcid.org/0000-0002-6071-4086"
 license: MIT
