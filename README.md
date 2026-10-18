@@ -16,6 +16,7 @@ Code and data for:
 | `src/threshold_label_demo.py` | Reproduces the supervised classifiers trained on threshold-derived labels. |
 | `src/multi_run.py` | Applies the protocol, unchanged, to all four documented failures (Tests 1–3). |
 | `src/decision.py` | Combines detection and false-alarm rates with the cost model. |
+| `src/uncertainty_scenarios.py` | Revision analyses: warnings on non-failed bearings counted per bearing, run-level detection interval, Poisson interval for the false-alarm rate, and cost scenarios for warnings on non-failed bearings. |
 | `src/tables.py` | Prints Tables 1–4. |
 | `src/figures.py` | Figures 1–6 (PNG at 600 dpi and PDF). |
 

@@ -9,7 +9,7 @@ print('\nTable 2. Test 3 detectors (FA episodes (per 1000 h), first alarm final 
 for n, d_ in [('D1 c=2.0', De['D1 RMS > 2x baseline']), ('D1 c=1.2 (post hoc)', sw[('RMS ratio', 1.2)]), ('D2', De['D2 RMS > mean+3sd']),
               ('D3', De['D3 Kurtosis > 6']), ('D4 a=1e-3', De['D5 Hotelling T2 (alpha=0.001)']), ('D4 a=1e-4', sw[('T2', 0.9999)])]:
     print(f"{n:22s} {d_['fa_episodes_ref']} ({f(d_['fa_per_1000h'])})  {f(d_['first_alarm_final7d_ttg'])}  {f(d_['sustained_lead_h'])}")
-print('\nTable 3. Four failures (sustained warning h; detected; FA per 1000 ch-h; non-failed alarmed)')
+print('\nTable 3. Four failures (sustained warning h; detected; FA per 1000 ch-h; non-failed channels alarmed; bearing-level counts in results/uncertainty.json)')
 for dn in ['D1_2x', 'D1_1.2x', 'D2', 'D3', 'D4_1e-4']:
     leads = [f(c['lead']) if (c['lead'] or 0) >= 0.15 else '-' for c in M['detection'][dn]['cases']]
     r = D[dn]; print(f"{dn:8s} {' '.join(f'{x:>6s}' for x in leads)}  {r['detected']}/{r['n']} ({r['ci95'][0]:.2f}-{r['ci95'][1]:.2f})  {r['fa_per_1000h']:.1f}  {r['nonfailed_alarms']}/{r['nonfailed_n']}")

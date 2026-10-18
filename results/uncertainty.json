@@ -1,0 +1,201 @@
+{
+ "nonfailed": {
+  "D1_2x": {
+   "bearings": 1,
+   "of_bearings": 8,
+   "channels": 1,
+   "of_channels": 10,
+   "list": [
+    [
+     "T3",
+     4
+    ]
+   ]
+  },
+  "D1_1.2x": {
+   "bearings": 6,
+   "of_bearings": 8,
+   "channels": 6,
+   "of_channels": 10,
+   "list": [
+    [
+     "T2",
+     2
+    ],
+    [
+     "T2",
+     3
+    ],
+    [
+     "T2",
+     4
+    ],
+    [
+     "T3",
+     1
+    ],
+    [
+     "T3",
+     2
+    ],
+    [
+     "T3",
+     4
+    ]
+   ]
+  },
+  "D2": {
+   "bearings": 8,
+   "of_bearings": 8,
+   "channels": 9,
+   "of_channels": 10,
+   "list": [
+    [
+     "T1",
+     1
+    ],
+    [
+     "T1",
+     2
+    ],
+    [
+     "T2",
+     2
+    ],
+    [
+     "T2",
+     3
+    ],
+    [
+     "T2",
+     4
+    ],
+    [
+     "T3",
+     1
+    ],
+    [
+     "T3",
+     2
+    ],
+    [
+     "T3",
+     4
+    ]
+   ]
+  },
+  "D3": {
+   "bearings": 0,
+   "of_bearings": 8,
+   "channels": 0,
+   "of_channels": 10,
+   "list": []
+  },
+  "D4_1e-4": {
+   "bearings": 7,
+   "of_bearings": 8,
+   "channels": 8,
+   "of_channels": 10,
+   "list": [
+    [
+     "T1",
+     2
+    ],
+    [
+     "T2",
+     2
+    ],
+    [
+     "T2",
+     3
+    ],
+    [
+     "T2",
+     4
+    ],
+    [
+     "T3",
+     1
+    ],
+    [
+     "T3",
+     2
+    ],
+    [
+     "T3",
+     4
+    ]
+   ]
+  }
+ },
+ "timing_1.2x": {
+  "T1": {
+   "failed_max_lead": 78.28861111111996,
+   "nonfailed_max_lead": 1.7763888888890733
+  },
+  "T2": {
+   "failed_max_lead": 62.33333333333208,
+   "nonfailed_max_lead": 17.499999999999005
+  },
+  "T3": {
+   "failed_max_lead": 43.66666666667675,
+   "nonfailed_max_lead": 27.500000000012506
+  }
+ },
+ "run_level": {
+  "detected": 3,
+  "n": 3,
+  "ci95": [
+   0.2924017738212866,
+   1.0
+  ]
+ },
+ "fa_rate_1.2x": {
+  "episodes": 2,
+  "channel_hours": 4094.032222221966,
+  "per1000": 0.4885159401394584,
+  "ci95_per1000": [
+   0.0591615467092025,
+   1.7646875441060608
+  ]
+ },
+ "cost_over_fa_ci": {
+  "lo": {
+   "at_phat": 13989.193068843904,
+   "at_lower": 56071.32281371217
+  },
+  "hi": {
+   "at_phat": 18253.00806233605,
+   "at_lower": 60335.137807204315
+  }
+ },
+ "scenarios_1.2x": {
+  "n_nf_per_failure": 1.5,
+  "base": {
+   "at_phat": 15062.579052419544,
+   "at_lower": 57144.708797287814
+  },
+  "inspection": {
+   "at_phat": 18642.22281157581,
+   "at_lower": 60712.843212448584
+  },
+  "replacement": {
+   "at_phat": 35824.51285552589,
+   "at_lower": 77839.88840522029
+  },
+  "max_unnecessary_replacements_per_failure": {
+   "1.5": {
+    "at_phat": 4.057683919107335,
+    "at_lower": 1.0206323745572656
+   },
+   "2.0": {
+    "at_phat": 2.9474422088521672,
+    "at_lower": -0.09319052190747432
+   },
+   "3.0": {
+    "at_phat": 1.8190714488447497,
+    "at_lower": -1.2252009450330203
+   }
+  }
+ }
+}
