@@ -8,7 +8,7 @@ out = sys.argv[1]
 s = pd.read_csv(f'{out}/series.csv', parse_dates=['t']); R = json.load(open(f'{out}/results.json'))
 BLUE, ORANGE, AQUA, YELLOW = '#2a78d6', '#eb6834', '#1baf7a', '#eda100'
 INK, MUTED, GRID = '#222222', '#6b6b6b', '#e4e4e0'
-plt.rcParams.update({'font.family': 'serif', 'font.serif': ['Times New Roman', 'DejaVu Serif', 'Liberation Serif'],
+plt.rcParams.update({'font.family': 'serif', 'font.serif': ['Times New Roman', 'Liberation Serif', 'DejaVu Serif'],
                      'font.size': 8, 'axes.titlesize': 8, 'axes.labelsize': 8, 'xtick.labelsize': 7, 'ytick.labelsize': 7,
                      'legend.fontsize': 7, 'axes.edgecolor': MUTED, 'axes.linewidth': 0.6, 'xtick.color': MUTED,
                      'ytick.color': MUTED, 'axes.labelcolor': INK, 'axes.grid': True, 'grid.color': GRID,
